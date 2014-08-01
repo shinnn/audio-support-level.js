@@ -1,6 +1,6 @@
 {
   "name": "audio-support-level",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Check if the given audio format is supported on the browser, and return the compatibility level as a number",
   "keywords": [
     "audio",
@@ -9,6 +9,7 @@
     "codec",
     "codecs",
     "format",
+    "mime",
     "canplaytype",
     "level",
     "support",

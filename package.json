@@ -32,6 +32,7 @@
     "codec",
     "codecs",
     "format",
+    "mime",
     "canplaytype",
     "level",
     "support",

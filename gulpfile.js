@@ -6,6 +6,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var mergeStream = require('merge-stream');
 
+var isTravis = require('is-travis');
 var rimraf = require('rimraf');
 var stylish = require('jshint-stylish');
 var toCamelCase = require('to-camel-case');
@@ -94,7 +95,13 @@ gulp.task('build:test', ['clean:test', 'bower-install'], function() {
 gulp.task('build', ['lint', 'build:dist', 'build:test']);
 
 gulp.task('test', ['build'], function(cb) {
-  exec('node_modules/.bin/casperjs test ./tmp/test.js', function(err, stdout, stderr) {
+  var cmd;
+  if (isTravis) {
+    cmd = 'node_modules/.bin/casperjs test ./tmp/test.js';
+  } else {
+    cmd = 'npm run-script casper-slimer';
+  }
+  exec(cmd, function(err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);

@@ -11,20 +11,20 @@ casper.test.begin('audioSupportLevel()', 8, test => {
     );
 
     test.assertEvalEquals(
-      () => typeof audioSupportLevel('wav'),
-      'number',
+      () => audioSupportLevel('wav'),
+      1,
       'should return a number.'
     );
 
     test.assertEvalEquals(
-      () => typeof audioSupportLevel('ogg', 'vorbis'),
-      'number',
+      () => audioSupportLevel('ogg', 'vorbis'),
+      2,
       'should accept the second argument.'
     );
 
     test.assertEvalEquals(
-      () => typeof audioSupportLevel({subtype: 'ogg', codecs: 'vorbis'}),
-      'number',
+      () => audioSupportLevel({subtype: 'ogg', codecs: 'vorbis'}),
+      2,
       'should accept an object.'
     );
 

@@ -8,8 +8,11 @@
   <script>
   if (!window.Audio) {
     window.Audio = function() {};
-    window.Audio.prototype.canPlayType = function() {
-      return 'probably';
+    window.Audio.prototype.canPlayType = function(mimetype) {
+      if (mimetype.indexOf('codecs') !== -1) {
+        return 'probably';
+      }
+      return 'maybe';
     }
   }
   </script>

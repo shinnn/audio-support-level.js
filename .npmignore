@@ -1,0 +1,12 @@
+.editorconfig
+.jshintrc
+.travis.yml
+gulpfile.js
+dist/audio-support-level.js
+dist/audio-support-level-amd.js
+bower_components
+src
+test
+tmp
+bower.json
+component.json

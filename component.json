@@ -1,0 +1,27 @@
+{
+  "name": "audio-support-level",
+  "version": "0.0.0",
+  "description": "Check if the given audio format is supported on the browser, and return the compatibility level as a number",
+  "keywords": [
+    "audio",
+    "type",
+    "subtype",
+    "codec",
+    "codecs",
+    "format",
+    "canplaytype",
+    "level",
+    "support",
+    "compatibility",
+    "number"
+  ],
+  "repository": "shinnn/audio-support-level.js",
+  "main": "dist/audio-support-level-cjs.js",
+  "scripts": [
+    "dist/audio-support-level-cjs.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "shinnn/can-play-type-to-number": "*"
+  }
+}

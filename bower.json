@@ -1,0 +1,48 @@
+{
+  "name": "audio-support-level",
+  "version": "0.0.0",
+  "description": "Check if the given audio format is supported on the browser, and return the compatibility level as a number",
+  "keywords": [
+    "audio",
+    "type",
+    "subtype",
+    "codec",
+    "codecs",
+    "format",
+    "canplaytype",
+    "level",
+    "support",
+    "compatibility",
+    "number"
+  ],
+  "main": "dist/audio-support-level.js",
+  "homepage": "https://github.com/shinnn/audio-support-level.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shinnn/audio-support-level.js.git"
+  },
+  "authors": [
+    {
+      "name": "Shinnosuke Watanabe",
+      "email": "snnskwtnb@gmail.com",
+      "url": "https://github.com/shinnn"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "can-play-type-to-number": "~0.2.1"
+  },
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "src",
+    "test",
+    "tmp",
+    "dist/audio-support-level-amd.js",
+    "dist/audio-support-level-cjs.js",
+    "gulpfile.js",
+    "package.json",
+    "component.json"
+  ]
+}

@@ -4,7 +4,6 @@
   "description": "Check if the given audio format is supported on the browser, and return the compatibility level as a number",
   "main": "dist/audio-support-level-cjs.js",
   "scripts": {
-    "casperjs": "casperjs test ./tmp/test.js --engine=slimerjs",
     "test": "gulp test"
   },
   "author": {
@@ -59,7 +58,6 @@
     "merge-stream": "^0.1.5",
     "require-main": "^0.1.1",
     "rimraf": "^2.2.8",
-    "slimerjs": "^0.9.1-2",
     "to-camel-case": "^0.2.1",
     "wiredep": "^1.8.2"
   }

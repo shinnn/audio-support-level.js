@@ -3,9 +3,17 @@
 <head>
   <meta charset='utf-8'>
   <title>audio-support-level.js test</title>
-  <!-- bower:js -->
-  <!-- endbower -->
 </head>
 <body>
+  <script>
+  if (!window.Audio) {
+    window.Audio = function() {};
+    window.Audio.prototype.canPlayType = function() {
+      return 'probably';
+    }
+  }
+  </script>
+  <!-- bower:js -->
+  <!-- endbower -->
 </body>
 </html>

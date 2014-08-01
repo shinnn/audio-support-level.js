@@ -94,7 +94,7 @@ gulp.task('build:test', ['clean:test', 'bower-install'], function() {
 gulp.task('build', ['lint', 'build:dist', 'build:test']);
 
 gulp.task('test', ['build'], function(cb) {
-  exec('npm run-script casperjs', function(err, stdout, stderr) {
+  exec('node_modules/.bin/casperjs test ./tmp/test.js', function(err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);

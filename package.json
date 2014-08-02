@@ -1,6 +1,6 @@
 {
   "name": "audio-support-level",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check if the given audio format is supported on the browser, and return the compatibility level as a number",
   "main": "dist/audio-support-level-cjs.js",
   "scripts": {

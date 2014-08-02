@@ -1,6 +1,6 @@
 {
   "name": "audio-support-level",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check if the given audio format is supported on the browser, and return the compatibility level as a number",
   "keywords": [
     "audio",
@@ -31,7 +31,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "can-play-type-to-number": "~0.2.1"
+    "can-play-type-to-number": "~1.0.0"
   },
   "ignore": [
     "**/.*",

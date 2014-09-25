@@ -33,10 +33,10 @@ npm i --save audio-support-level
 bower i --save audio-support-level
 ```
 
-#### [Component](https://github.com/component/component)
+#### [Duo](http://duojs.org/)
 
-```
-component install shinnn/audio-support-level.js
+```javascript
+var audioSupportLevel = require('shinnn/audio-support-level.js');
 ```
 
 ### Install manually
@@ -87,6 +87,6 @@ audioSupportLevel({subtype: 'ogg', codecs: 'vorbis'}); //=> 2
 
 Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
 
-Licensed under [the MIT LIcense](./LICENSE).
+Licensed under [the MIT License](./LICENSE).
 
 [canplaytypetonumber]: https://github.com/shinnn/can-play-type-to-number

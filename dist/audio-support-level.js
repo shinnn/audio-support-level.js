@@ -11,7 +11,7 @@ function audioSupportLevel(subtype, codecs) {
   var opts;
   if (typeof subtype === 'object') {
     opts = subtype;
-    
+
     if (opts.subtype === undefined) {
       throw new TypeError('subtype property is required.');
     }

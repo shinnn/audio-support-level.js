@@ -31,6 +31,8 @@ var moduleExports = '\nvar <%= depVarName %> = require(\'<%= depName %>\');\n' +
                     'module.exports = <%= funName %>;\n';
 
 gulp.task('lint', function() {
+  gulp.src(['{,src/}*.js'])
+    .pipe($.jscs());
   gulp.src(['{,test/,src/}*.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter(stylish));

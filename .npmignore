@@ -1,4 +1,6 @@
 .editorconfig
+.gitattributes
+.jscs.json
 .jshintrc
 .travis.yml
 gulpfile.js
